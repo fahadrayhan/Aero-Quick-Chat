@@ -1,0 +1,58 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background gradient circle -->
+    <path android:pathData="M54,20C70.57,20 84,33.43 84,50C84,66.57 70.57,80 54,80C37.43,80 24,66.57 24,50C24,33.43 37.43,20 54,20Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="20"
+                android:endX="54"
+                android:endY="80"
+                android:type="linear">
+                <item
+                    android:color="#4CAF50"
+                    android:offset="0.0" />
+                <item
+                    android:color="#25D366"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Main chat bubble -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,35C38.69,35 36,37.69 36,41L36,55C36,58.31 38.69,61 42,61L58,61L66,67L66,61C69.31,61 72,58.31 72,55L72,41C72,37.69 69.31,35 66,35L42,35Z" />
+    
+    <!-- Message lines inside bubble -->
+    <path
+        android:fillColor="#25D366"
+        android:pathData="M42,42L62,42"
+        android:strokeWidth="2"
+        android:strokeColor="#25D366"
+        android:strokeLineCap="round" />
+    
+    <path
+        android:fillColor="#25D366"
+        android:pathData="M42,48L58,48"
+        android:strokeWidth="2"
+        android:strokeColor="#25D366"
+        android:strokeLineCap="round" />
+    
+    <path
+        android:fillColor="#25D366"
+        android:pathData="M42,54L52,54"
+        android:strokeWidth="2"
+        android:strokeColor="#25D366"
+        android:strokeLineCap="round" />
+        
+    <!-- Small notification dot -->
+    <path
+        android:pathData="M68,28A4,4 0 1,1 68,36A4,4 0 1,1 68,28Z"
+        android:fillColor="#FF5722" />
+</vector>

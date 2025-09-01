@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Aero Quick Chat</string>
+    <string name="select_country">Select Country</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="message">Message</string>
+    <string name="open_in_whatsapp">Open in WhatsApp</string>
+    <string name="open_whatsapp">Open WhatsApp</string>
+    <string name="permission_denied">Permission denied. Cannot auto-detect country.</string>
+    <string name="enter_phone_number">Please enter a phone number</string>
+    <string name="whatsapp_not_installed">WhatsApp is not installed</string>
+    
+    <!-- Error Messages -->
+    <string name="error_invalid_phone">⚠️ Invalid phone number format. Please check and try again.</string>
+    <string name="error_whatsapp_not_found">❌ WhatsApp not found. Please install WhatsApp from Play Store.</string>
+    <string name="error_network_issue">🌐 Network connection issue. Please check your internet and try again.</string>
+    <string name="error_phone_empty">📱 Phone number is required. Please enter a valid number.</string>
+    <string name="error_country_not_selected">🌍 Please select a country from the dropdown.</string>
+    <string name="error_generic">❌ Something went wrong. Please try again later.</string>
+    <string name="action_install_whatsapp">Install WhatsApp</string>
+    <string name="action_check_network">Check Network</string>
+    <string name="action_retry">Retry</string>
+    
+    <!-- Custom Messages -->
+    <string name="default_greeting">As-salamu Alaikum!</string>
+    <string name="custom_message_hint">Enter your custom greeting message</string>
+    <string name="settings_title">Settings</string>
+    <string name="custom_greeting_title">Custom Greeting Message</string>
+    <string name="save_message">Save Message</string>
+    <string name="reset_to_default">Reset to Default</string>
+    
+    <!-- Theme Options -->
+    <string name="theme_title">Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="system_theme">Follow System</string>
+    
+    <!-- About Section -->
+    <string name="about_title">About</string>
+    <string name="about_app">About Aero QuickChat</string>
+    <string name="back_button_description">Back button</string>
+    
+    <!-- Country Options -->
+    <string-array name="country_options">
+        <item>Bangladesh (+880)</item>
+        <item>India (+91)</item>
+        <item>Pakistan (+92)</item>
+        <item>United States (+1)</item>
+        <item>United Kingdom (+44)</item>
+        <item>Canada (+1)</item>
+        <item>Australia (+61)</item>
+        <item>Germany (+49)</item>
+        <item>France (+33)</item>
+        <item>Japan (+81)</item>
+        <item>South Korea (+82)</item>
+        <item>China (+86)</item>
+        <item>Brazil (+55)</item>
+        <item>Mexico (+52)</item>
+        <item>Russia (+7)</item>
+        <item>Saudi Arabia (+966)</item>
+        <item>UAE (+971)</item>
+        <item>Turkey (+90)</item>
+        <item>Egypt (+20)</item>
+        <item>South Africa (+27)</item>
+    </string-array>
+</resources>

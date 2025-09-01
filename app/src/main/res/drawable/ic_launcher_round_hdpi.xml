@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+    
+    <!-- Background circle with gradient -->
+    <path
+        android:pathData="M36,6A30,30 0 1,1 36,66A30,30 0 1,1 36,6Z"
+        android:fillColor="#25D366" />
+    
+    <!-- Chat bubble -->
+    <path android:pathData="M24,22C21.24,22 19,24.24 19,27L19,39C19,41.76 21.24,44 24,44L42,44L50,50L50,44C52.76,44 55,41.76 55,39L55,27C55,24.24 52.76,22 50,22L24,22Z"
+        android:fillColor="#FFFFFF" />
+    
+    <!-- Message lines -->
+    <path android:pathData="M26,28L48,28"
+        android:strokeWidth="2"
+        android:strokeColor="#25D366"
+        android:strokeLineCap="round" />
+    
+    <path android:pathData="M26,33L44,33"
+        android:strokeWidth="2"
+        android:strokeColor="#25D366"
+        android:strokeLineCap="round" />
+    
+    <path android:pathData="M26,38L38,38"
+        android:strokeWidth="2"
+        android:strokeColor="#25D366"
+        android:strokeLineCap="round" />
+        
+    <!-- Notification dot -->
+    <path
+        android:pathData="M52,17A3,3 0 1,1 52,23A3,3 0 1,1 52,17Z"
+        android:fillColor="#FF5722" />
+</vector>

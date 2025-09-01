@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material You Dynamic Colors - Dark Theme -->
+    <color name="colorPrimary">#D0BCFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#EADDFF</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Modern Dark Color Palette -->
+    <color name="primary_color">#D0BCFF</color>
+    <color name="primary_variant">#4F378B</color>
+    <color name="secondary_color">#CCC2DC</color>
+    <color name="secondary_variant">#4A4458</color>
+    
+    <!-- Dark Surface Colors - Better Contrast -->
+    <color name="background_color">#121212</color>
+    <color name="surface_color">#1E1E1E</color>
+    <color name="surface_variant">#2C2C2C</color>
+    <color name="card_background">#1E1E1E</color>
+    <color name="card_background_elevated">#2C2C2C</color>
+    
+    <!-- Dark Text Colors - Enhanced Visibility -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#E0E0E0</color>
+    <color name="text_tertiary">#BDBDBD</color>
+    <color name="text_on_primary">#000000</color>
+    
+    <!-- Dark Accent Colors -->
+    <color name="accent_blue">#9CCAFF</color>
+    <color name="accent_green">#4FDC6F</color>
+    <color name="accent_orange">#FFB951</color>
+    <color name="accent_red">#FFB4AB</color>
+    
+    <!-- WhatsApp Brand - Dark -->
+    <color name="whatsapp_green">#25D366</color>
+    <color name="whatsapp_green_dark">#128C7E</color>
+    
+    <!-- Dark State Colors -->
+    <color name="success">#4FDC6F</color>
+    <color name="warning">#FFB951</color>
+    <color name="error">#FFB4AB</color>
+    <color name="error_container">#93000A</color>
+    <color name="info">#9CCAFF</color>
+    
+    <!-- Overlay Colors -->
+    <color name="overlay_light">#1AFFFFFF</color>
+    <color name="overlay_medium">#4DFFFFFF</color>
+    <color name="overlay_dark">#80FFFFFF</color>
+</resources>

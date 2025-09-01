@@ -1,0 +1,63 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - Dark Mode -->
+    <style name="Base.Theme.AeroQuickChat" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <!-- Error colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/text_primary</item>
+        <item name="colorErrorContainer">@color/error_container</item>
+        <item name="colorOnErrorContainer">@color/text_primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Typography -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.AeroQuickChat.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.AeroQuickChat.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.AeroQuickChat.Headline3</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AeroQuickChat.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.AeroQuickChat.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.AeroQuickChat.Caption</item>
+        <!-- Material Components -->
+        <item name="materialCardViewStyle">@style/Widget.AeroQuickChat.CardView</item>
+        <item name="materialButtonStyle">@style/Widget.AeroQuickChat.Button</item>
+        <!-- Window configuration for custom toolbar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- ActionBar styling for dark theme -->
+        <item name="actionBarStyle">@style/Widget.AeroQuickChat.ActionBar.Dark</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AeroQuickChat.ActionBar.Dark</item>
+        <!-- Menu item styling -->
+        <item name="actionMenuTextColor">@color/text_primary</item>
+        <item name="android:actionMenuTextColor">@color/text_primary</item>
+    </style>
+
+    <!-- Dark ActionBar Styles -->
+    <style name="Widget.AeroQuickChat.ActionBar.Dark" parent="Widget.MaterialComponents.ActionBar.Primary">
+        <item name="android:background">@color/surface_color</item>
+        <item name="titleTextStyle">@style/TextAppearance.AeroQuickChat.Headline3</item>
+        <item name="android:elevation">4dp</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="ThemeOverlay.AeroQuickChat.ActionBar.Dark" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="colorControlNormal">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="actionMenuTextColor">@color/text_primary</item>
+    </style>
+
+    <style name="Theme.AeroQuickChat" parent="Base.Theme.AeroQuickChat" />
+</resources>

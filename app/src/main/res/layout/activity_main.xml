@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- Header Section with Toolbar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:elevation="4dp"
+        app:elevation="4dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorSurface"
+            app:titleTextColor="?attr/colorOnSurface"
+            app:title="Aero QuickChat"
+            app:titleTextAppearance="@style/TextAppearance.AeroQuickChat.Headline3"
+            android:paddingStart="@dimen/spacing_md"
+            android:paddingEnd="@dimen/spacing_md" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingHorizontal="@dimen/spacing_md">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_xl">
+
+            <!-- WhatsApp Logo -->
+            <ImageView
+                android:id="@+id/whatsappLogo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/spacing_md"
+                android:layout_marginBottom="@dimen/spacing_md"
+                android:src="@drawable/ic_whatsapp_modern"
+                android:contentDescription="WhatsApp Logo" />
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_sm"
+                android:text="Open WhatsApp Chat"
+                android:textAppearance="@style/TextAppearance.AeroQuickChat.Headline2"
+                android:gravity="center" />
+
+            <!-- Subtitle -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Send WhatsApp messages instantly without saving contacts."
+                android:textAppearance="@style/TextAppearance.AeroQuickChat.Body2"
+                android:layout_marginHorizontal="@dimen/spacing_lg" />
+
+            <!-- Country Code Info -->
+
+            <!-- Phone Number Input Card -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_lg"
+                android:background="@drawable/card_background_enhanced"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation"
+                android:layout_marginHorizontal="@dimen/spacing_xs">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/spacing_sm"
+                        android:text="Phone Number"
+                        android:textAppearance="@style/TextAppearance.AeroQuickChat.Headline3" />
+
+                    <!-- Phone Number Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/phoneNumberInputLayout"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:hint=" Enter Phone number"
+                        app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
+                        app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
+                        app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
+                        app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
+                        app:boxStrokeColor="@color/primary_color"
+                        app:hintTextColor="@color/text_secondary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phoneNumberInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/input_height"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:textAppearance="@style/TextAppearance.AeroQuickChat.Body1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Message Input Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginBottom="@dimen/spacing_sm"
+                        android:text="Message (Optional)"
+                        android:textAppearance="@style/TextAppearance.AeroQuickChat.Headline3" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your message"
+                        app:boxCornerRadiusBottomEnd="@dimen/input_corner_radius"
+                        app:boxCornerRadiusBottomStart="@dimen/input_corner_radius"
+                        app:boxCornerRadiusTopEnd="@dimen/input_corner_radius"
+                        app:boxCornerRadiusTopStart="@dimen/input_corner_radius"
+                        app:boxStrokeColor="@color/primary_color"
+                        app:hintTextColor="@color/text_secondary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/messageInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="textMultiLine"
+                            android:maxLines="2"
+                            android:minLines="1"
+                            android:text="As-salamu Alaikum!"
+                            android:textAppearance="@style/TextAppearance.AeroQuickChat.Body2" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:drawablePadding="@dimen/spacing_xs"
+                        android:lineSpacingExtra="2dp"
+                        android:text="• Message will be pre-filled in WhatsApp"
+                        android:textAppearance="@style/TextAppearance.AeroQuickChat.Caption"
+                        android:gravity="center_vertical"
+                        app:drawableStartCompat="@drawable/ic_info_modern" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_sm"
+                        android:drawablePadding="2dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="2dp"
+                        android:text="• Country code auto-detected from number"
+                        android:textAppearance="@style/TextAppearance.AeroQuickChat.Caption"
+                        app:drawableStartCompat="@drawable/ic_info_modern" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Open WhatsApp Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/openWhatsAppButton"
+                style="@style/Widget.AeroQuickChat.Button"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:elevation="@dimen/button_elevation"
+                android:text="@string/open_whatsapp"
+                android:textAppearance="@style/TextAppearance.AeroQuickChat.Button"
+                android:textColor="@color/text_on_primary"
+                app:backgroundTint="@color/whatsapp_green"
+                app:cornerRadius="@dimen/button_corner_radius"
+                app:icon="@drawable/ic_whatsapp_modern"
+                app:iconGravity="start"
+                app:iconPadding="@dimen/spacing_sm"
+                app:iconSize="@dimen/icon_size_sm"
+                app:iconTint="@color/text_on_primary" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
