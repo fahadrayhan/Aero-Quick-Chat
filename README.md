@@ -18,8 +18,8 @@ A modern Android application for quick WhatsApp messaging with an enhanced UI/UX
 
 ## Screenshots
 
-![Home Screen](screenshots/homescreen.jpg)
-![Settings Screen](screenshots/settings.jpg)
+<img src="screenshots/homescreen.jpg" width="300">
+<img src="screenshots/settings.jpg" width="300">
 
 ## Installation
 
